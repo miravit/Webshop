@@ -1,0 +1,112 @@
+@use "variables" as var;
+
+.productmodal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-size: 30px;
+  }
+  &__image {
+    max-width: 300px;
+  }
+  &__size,
+  &__desc,
+  &__price {
+    font-size: 20px;
+  }
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.productDiv {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: var.$secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  &__image {
+    max-width: 300px;
+    padding: 5px;
+  }
+  &__price {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    padding-left: 5px;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--choose {
+      font-size: 1.1rem;
+    }
+    &--label {
+      display: inline;
+      font-weight: lighter;
+      font-size: 1.2rem;
+      padding-left: 5px;
+    }
+    &--btn {
+      padding: 5px;
+      margin: 5px;
+      border: none;
+      border-radius: 10px;
+      background-color: white;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+    &--select {
+      padding: 5px;
+      margin: 5px;
+      border-radius: 10px;
+      border: none;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+  &__btn--desc {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    background-color: white;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+.productsTitle {
+  color: white;
+  font-weight: lighter;
+  padding: 10px;
+}
+
+.heroProducts {
+  background-color: var.$primary-color;
+  display: flex;
+  justify-content: space-between;
+}

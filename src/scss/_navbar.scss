@@ -1,0 +1,10 @@
+@use "variables" as var;
+
+.navbar {
+  background-color: var.$primary-color;
+  color: white;
+  &__color {
+    color: white;
+    font-weight: bold;
+  }
+}

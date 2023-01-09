@@ -1,0 +1,85 @@
+@use "mixins/breakpoints" as mix;
+@use "variables" as var;
+
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include mix.tablet {
+    flex-direction: row;
+  }
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  @include mix.tablet {
+    width: 50vw;
+  }
+}
+
+.checkoutCart {
+  @include mix.tablet {
+    width: 50vw;
+  }
+}
+
+.deliveryFormContainer {
+  //the form container
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(171, 179, 158);
+  margin-top: 40px;
+  .deliveryForm {
+    display: flex;
+    flex-wrap: wrap;
+    &__zip {
+      max-width: 60px;
+    }
+    label {
+      //all labels in deliveryForm
+      margin-right: 5px;
+      padding-left: 5px;
+    }
+  }
+}
+/*
+.payOutFormContainer {
+  background-color: rgb(171, 179, 158);
+  margin-top: 40px;
+  &__extendedDiv {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+    &--payButton {
+      font-weight: lighter;
+      border: none;
+      height: 30px;
+      margin-bottom: 30px;
+      border-radius: 10%;
+    }
+    &__paymentDiv {
+      display: flex;
+      background-color: orange;
+    }
+  }
+  &__cartForm {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    &__paymentForm {
+      padding-left: 15px;
+    }
+    input {
+      max-width: 370px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+}
+*/
+
+.checkout-form {
+  background-color: var.$secondary-color;
+}

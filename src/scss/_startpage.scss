@@ -1,0 +1,98 @@
+@use "mixins/breakpoints" as mix;
+@use "variables" as var;
+
+.productPageTitle {
+  color: white;
+  font-weight: lighter;
+  padding: 10px;
+  background-color: rgba(85, 122, 72, 0.779);
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  .product-button-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.productAttributesDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer {
+  background-color: var.$secondary-color;
+  width: 100%;
+  height: 100px;
+  position: bottom;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.entryText {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: lighter;
+}
+
+.entryLittleText {
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20%;
+  font-weight: 400;
+  padding: 20px;
+  text-align: center;
+}
+
+.info {
+  color: white;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+}
+
+.startPageButton {
+  margin-top: 180px;
+  color: white;
+  border: none;
+  //border-radius: 30px;
+  background: linear-gradient(
+    145deg,
+    rgba(85, 107, 47, 0.643),
+    rgb(85, 107, 47)
+  );
+  &:hover {
+    background-color: orange;
+    scale: 1.1;
+  }
+}
+
+.bg-startpage {
+  background-image: url("https://dl.dropboxusercontent.com//s/sv6usld9vegclbp/bg-image.jpg?dl=0");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include mix.tablet {
+    background-size: cover;
+    background-position: top;
+  }
+}
