@@ -139,5 +139,6 @@ let checkOutFormfName: HTMLFormElement = document.getElementById(
 
 checkOutForm.addEventListener("submit", (e: SubmitEvent) => {
   e.preventDefault();
+
   paymentOption();
 });
